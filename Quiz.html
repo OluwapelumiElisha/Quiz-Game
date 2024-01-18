@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./Quiz.js"></script>
+    <link rel="stylesheet" href="./Quiz.css">
+</head>
+<body>
+    <div class="big">
+        <div id="Page">
+            <h1>Elisha Quiz Game.</h1>
+            <p class="welcome">Welcome to Quiz app! Prepare to test your knowledge.</p>
+            <p class="instruction">Instructions</p>
+            <ul>
+                <li>10 Seconds for each of the questions.</li>
+                <li>Read each questions carefully before picking an answer.</li>
+                <li>Use the Next button to proceed to the Next question.</li>
+                <li>Once the timer runs out, your will be automatically submitted</li>
+                <li>Feel Free to Skip questions and come back to them later.</li>
+                <li>Best of Luck.</li>
+            </ul>
+            <button onclick="start()">START</button>
+        </div>
+        <div class="questionPage" id="questionPage">
+            <div class="timerbox">
+                <h6 id="timer"></h6>
+            </div>
+            <h1>Question <span id="number"></span></h1> <br>
+            <hr>
+            <p class="quest" id="demo"></p>
+        <ul id="display">
+            
+        </ul>
+        <button class="one" id="previous" onclick="p()">PREVIOUS</button> 
+        <button class="two" id="next" onclick="n()">NEXT</button> <br> <br>
+        <button class="three" id="submitquestion" onclick="PRESUBMIT()">SUBMIT</button>
+        </div>
+        <div class="submitpage" id="submitpage">
+            <h1>Zion Quiz Game.</h1>
+            <h2>Congratulations To You. <br> <span>👏👏👏 👏</span></h2>
+            <h3>YOU SCORED</h3>
+            <div class="realScore">
+                <p id="one"></p>
+            </div>
+            <h6 class="Out"><b>Out of</b></h6>
+            <div class="Total">
+                <p class="two" id="two"></p>
+            </div>
+            <a href="./Quiz.html"><button onclick="Again()"><b>START AGAIN</b></button></a>
+        </div>
+        <div class="Sure" id="sure" hidden>
+            <div class="subsure" id="subsure" >
+               <h5>There is an unanswer question left</h5> 
+               <h4>Are Sure You Want To Submit:</h4> 
+               <button onclick="handleResponse('no')">❌</button> &nbsp; &nbsp; &nbsp;
+               <button onclick="handleResponse('yes')">✔</button>
+            </div>
+        </div>
+    </div>
+</body>
+    
+</html>
