@@ -169,6 +169,7 @@ function n() {
             clearInterval(stop)
             questionPage.style.display = 'none'
             submitpage.style.display = 'block'
+            handleSubmit()
         }
     }, 2000);
     }
